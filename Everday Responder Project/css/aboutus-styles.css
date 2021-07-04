@@ -1,0 +1,80 @@
+h1{
+    font-size: 30px;
+    font-family: "Lato";
+    color: grey;
+}
+
+h2{
+    font-size: 18px;
+    font-family: 'Lato';
+}
+
+
+.aboutus-wrapper{
+    padding-top: 1cm;
+}
+
+.member{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1cm;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .6);
+    border-radius: 8px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.info-container{
+    margin-right: 1cm;
+    padding-left: 40px;
+}
+
+.info-container.showContent p{
+    height: auto;
+}
+
+.info-container.showContent a.readmore-btn{
+    background-color: rgba(211, 211, 211, 0.6);
+}
+
+.member-img img{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 330px;
+    height: auto;
+    display: block;
+
+}
+
+.member-img{
+    flex: none;
+}
+
+.member p{
+    font-size: 18px;
+    font-family: "Lato";
+    height: 4px;
+    overflow: hidden;
+}
+
+.member a{
+    display: inline;
+    background-color: rgba(211, 211, 211, 0.6);
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+
+.member a:hover{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+}
+
+
+
+
