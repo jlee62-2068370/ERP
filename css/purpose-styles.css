@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/image1.jpg);
+    background-image: url(../images/home-mural.jpg);
 }
 
 h1{
@@ -18,8 +18,8 @@ p{
 
 .purpose-container{
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: %;25
+    left: 25%;
     transform: translate(-50%, -50%);
 }
 
