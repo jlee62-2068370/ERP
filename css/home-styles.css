@@ -1,5 +1,29 @@
 body{
     background-image: url(../images/home-mural.jpeg) ;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  flex-direction:column;
+}
+.mobile {
+  display:none;
+}
+@media (max-width: 850px) {
+  /* TABLET ENVIRONMENT */
+  .mobile {
+    display:inline;
+    position:absolute;
+    top:0;
+    filter: drop-shadow( 0 3px 3px #DBA87D);
+    margin :110px 10px;
+  }
+  .mobile img {
+    width:100%;
+    max-width:400px;
+/*     opacity:.9; */
+  }
 }
