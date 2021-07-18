@@ -91,11 +91,14 @@ body {
 
 .dropdown .dropbtn {
   font-size: 25px;
+  z-index:1001;
   font-weight: bold;
   text-transform: uppercase;
   border: none;
   outline: none;
   color: black;
+  padding-bottom:20px;
+  margin-bottom:-20px;
   background-color: inherit;
   font-family: inherit;
 }
