@@ -1,7 +1,13 @@
 body{
-    background-image: url(../images/home-mural.jpeg);
+    background-image: url(../images/home-mural.jpeg) ;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  flex-direction:column;
 }
 
 h1{
@@ -15,14 +21,11 @@ p{
     font-size: 30px;
     font-family: sans-serif;
     font-style: normal;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);display: block;
 }
 
 .purpose-container{
-    position: fixed;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+  margin:20px;
 }
 
 .moto{

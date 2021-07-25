@@ -1,9 +1,28 @@
+body{
+    background-image: url(../images/home-mural.jpeg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  flex-direction:column;
+}
+.contact-wrapper{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  flex-direction:column;
+    width: 950px;
+    max-width:100%;
+  }
 
 .contact-container{
     max-width: 950px;
     height: 600px;
     background: #fff;
-    margin: 50px auto;
+    margin: 50px 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
     padding: 40px;
