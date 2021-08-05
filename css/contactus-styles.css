@@ -34,10 +34,16 @@ p{
     letter-spacing: 1px;  
     font-size: 45px;
     font-family: 'Lato';
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     color: rgb(128, 154, 178);
 }
-
+.links {
+  width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*   flex-direction:column; */
+}
 .information input{
     font-family: 'Lato';
     font-size: 15px;

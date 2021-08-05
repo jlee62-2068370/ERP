@@ -1,3 +1,4 @@
+
 body{
     background-image: url(../images/home-mural.jpeg) ;
     background-repeat: no-repeat;
@@ -9,21 +10,25 @@ body{
     justify-content: center;
   flex-direction:column;
 }
-.mobile {
-  display:none;
+.splash {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  position:absolute;
+  bottom:40px;
+  left:35px;
+  font-size:32px;
+  
+}
+.splash h1 {
+  padding:0;
+  font-size:4vw;
+  margin:0;
 }
 @media (max-width: 850px) {
   /* TABLET ENVIRONMENT */
-  .mobile {
-    display:inline;
-    position:absolute;
-    top:0;
-    filter: drop-shadow( 0 3px 3px #DBA87D);
-    margin :110px 10px;
-  }
-  .mobile img {
-    width:100%;
-    max-width:400px;
-/*     opacity:.9; */
+  .splash h1 {
+    padding:0;
+    font-size:48px;
+    margin:0;
   }
 }
