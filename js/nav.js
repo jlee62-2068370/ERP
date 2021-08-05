@@ -8,9 +8,11 @@ function toggle() {
 }
 
 function toggle_specific(elem,classname, activename) {
-  console.log(elem.parentNode);
-
-  var elem = elem.parentNode.querySelector("."+classname);
+  var parent = elem.parentNode;
+  if (elem.parentNode.tagName.toLowerCase() == "a") {
+    parent = parent.parentNode;
+  }
+  var elem = parent.querySelector("."+classname);
   console.log(elem);
   if (elem.classList.contains(activename)) { //toggle off
     elem.classList.remove(activename);
