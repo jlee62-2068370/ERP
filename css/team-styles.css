@@ -20,7 +20,7 @@ h2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
   overflow: hidden;
   border-radius: 8px;
-  width: 80%;
+  width: 60%;
   display: flex;
   flex-wrap:wrap;
   flex-direction: row;
