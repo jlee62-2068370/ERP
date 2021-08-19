@@ -1,13 +1,12 @@
+#navbar {
+  position:static;
+}
 body{
     background-image: url(../images/home-mural.jpeg) ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position:center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  flex-direction:column;
 }
 .contact-wrapper{
     display: flex;

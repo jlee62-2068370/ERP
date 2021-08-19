@@ -1,34 +1,83 @@
-
-body{
-    background-image: url(../images/home-mural.jpeg) ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position:center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  flex-direction:column;
-}
-.splash {
-  font-family: 'Lato', sans-serif;
-  color: white;
-  position:absolute;
-  bottom:40px;
-  left:35px;
-  font-size:32px;
-  
+body {
+  background-image: url(../images/home-mural.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 .splash h1 {
-  padding:0;
-  font-size:4vw;
-  margin:0;
+  font-size: 4vw;
+}
+.section {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.about {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.col {
+  flex: 1 0 500px;
+  margin: 20px;
+}
+.text {
+  text-align: center;
+}
+.carousel {
+  width: 100%;
+  height: 50vh;
+}
+.carousel .img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.is-selected .img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.img {
+  width: auto;
+  height: 50vh;
 }
 @media (max-width: 850px) {
   /* TABLET ENVIRONMENT */
+
   .splash h1 {
-    padding:0;
-    font-size:48px;
-    margin:0;
+    padding: 0;
+    font-size: 48px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  /* PHONE ENVIRONMENT */
+
+  .about {
+    display:inline;
+  }
+  .col {
+  }
+  .carousel {
+    width: 100%;
+    min-width:250px;
+    height: 50vw;
+  }
+  .carousel .img {
+/*     opacity: 1; */
+  }
+  .flickity-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .img {
+    width: 80vw;
+    height: 50vw;
   }
 }

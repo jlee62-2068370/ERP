@@ -1,0 +1,28 @@
+body {
+    display:initial;
+  
+}
+#navbar {
+  position:static;
+}
+
+.splash {
+  min-width:180vh;
+  background-position: top center;
+  background-image: url('../images/ERP WEBSITE INFOGRAPHIC FINAL.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:#f0eadc;
+}
+
+@media (max-width: 450px) {
+  /* PHONE ENVIRONMENT */
+  #navbar {
+    position:fixed;
+  }
+  .splash {
+    margin-top:72px;
+  background-position: top left;
+    
+  }
+}
