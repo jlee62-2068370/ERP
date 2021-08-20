@@ -1,32 +1,149 @@
 /* Master Styles*/
 body {
   margin: 0px;
-    padding: 80px 0 0 0;
+  padding: 0;
   background-color: rgb(166, 185, 204);
-}
-#navbar {
-  z-index:1000;
-  width: 100%;
-  position:absolute;
-  top:0;
-}
-.nav-wrapper {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 10px;
-  padding-right:25px;
-  background-color: rgb(255, 255, 255, .75);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
-/*   border-bottom: 3px solid rgba(197, 24, 40, 1); */
+  /*   border-bottom: 3px solid rgba(197, 24, 40, 1); */
   width: 100%;
 }
 
+.raised-container {
+  margin: 60px;
+  text-align: center;
+}
+
+.point {
+  background-color: rgb(166, 185, 204);
+  margin: 20px 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.point > h2 {
+  color: white;
+}
+
+.moto {
+  padding: 40px;
+  background-color: rgb(255, 255, 255, 0.85);
+  #box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  #border-radius: 8px;
+  text-align: center;
+}
+
+.splash {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.splash h1 {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 32px;
+  padding: 0;
+  margin: 40px;
+}
+
+br::before {
+  margin-top: 6mm;
+}
+
+button {
+  margin:10px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  background-color: #90191f;
+  border: 0;
+  padding: 12px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c72229;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Lato";
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-family: "Lato";
+}
+
+.subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Lato";
+  color:grey;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Merriweather";
+  font-style: normal;
+  color: rgb(60, 60, 60);
+}
+
+iframe {
+  margin: 0;
+}
+
+@media (max-width: 450px) {
+  /* PHONE ENVIRONMENT */
+
+  .purpose-container {
+    margin: 0px;
+    text-align: center;
+  }
+  .moto {
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.45);
+  }
+}
+
 /* Nav Styles*/
+.nav-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 10px;
+  padding-right: 25px;
+  background-color: rgb(255, 255, 255, 0.75);
+}
+
+#navbar {
+  z-index: 1000;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
 .left-side {
   left: 1cm;
   display: flex;
@@ -42,12 +159,12 @@ body {
   height: 100%;
 }
 
-  .logo-simple {
-    display: initial;
-  }
-  .logo-full {
-    display: none !important;
-  }
+.logo-simple {
+  display: initial;
+}
+.logo-full {
+  display: none !important;
+}
 .right {
   display: flex;
   justify-content: left;
@@ -93,8 +210,8 @@ body {
 
 /*----------------------*/
 .dropdown {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
 .dropdown .dropbtn {
@@ -104,12 +221,13 @@ body {
   outline: none;
   background-color: inherit;
   font-family: inherit;
-  display:none;
+  display: none;
+  padding: 0;margin: 0;
 }
 .dropdown .link-btn {
-  z-index:1001;
-  padding-bottom:20px;
-  margin-bottom:-20px;
+  z-index: 1001;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
 }
 
 .nav-wrapper a:hover,
@@ -153,11 +271,10 @@ body {
 @media (max-width: 850px) {
   /* TABLET ENVIRONMENT */
   body {
-    padding:0;
+    padding: 0;
   }
   #navbar {
-    
-    position:static;
+    /*     position:static; */
   }
   .nav-wrapper {
     display: flex;
@@ -183,12 +300,11 @@ body {
     float: right;
   }
   .dropdown {
-    
-  display:block;
+    display: block;
   }
   .dropdown-content {
     position: relative;
-  margin-top: 10px;
+    margin-top: 10px;
   }
   .dropdown:hover .dropdown-content {
     display: none;
@@ -197,10 +313,10 @@ body {
     display: block !important;
   }
   .dropdown .dropbtn {
-    display:initial;
-    float:right;
+    display: initial;
+    float: right;
   }
   .mobile {
-    display:initial;
+    display: initial;
   }
 }
