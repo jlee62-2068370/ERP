@@ -6,23 +6,30 @@ body {
   position:static;
 }
 
+iframe {
+  max-width:220px;
+  margin: 0 auto;
+}
 .splash {
-  min-width:180vh;
-  background-position: top center;
   background-image: url('../images/ERP WEBSITE INFOGRAPHIC FINAL.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-color:#f0eadc;
+  min-height:0;
 }
-
+#graphic {
+  width:100%;
+  height:auto;
+}
 @media (max-width: 450px) {
   /* PHONE ENVIRONMENT */
-  #navbar {
-    position:fixed;
+  iframe {
+    max-width:450px;
+    margin:initial;
   }
-  .splash {
-    margin-top:72px;
-  background-position: top left;
-    
+  .raised-container > h1 {
+    font-size:10vw;
+    text-align:center;
   }
 }
