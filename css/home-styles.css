@@ -1,12 +1,38 @@
 body {
-  background-image: url(../images/home-mural.jpeg);
+  background-image: url(../images/homepage/homepage_bg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: center right;
 }
-.splash h1 {
-  font-size: 4vw;
+
+#plane {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-image: url(../images/homepage/homepage_fg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  z-index:100000;
+}
+
+.splash-overlay {
+  position:absolute;
+  width:350px;
+  height:100%;
+  left:0;top:0;
+  background-color: #a6b9cc;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  
+}
+.splash-overlay h1 {
+  font-size: 48px;
+  z-index:100000;
 }
 .section {
   width: 100%;
@@ -85,19 +111,18 @@ body {
   max-height:160px;
 }
 
-@media (max-width: 850px) {
-  /* TABLET ENVIRONMENT */
-
-  .splash h1 {
-    padding: 0;
-    font-size: 48px;
-    margin: 0;
-  }
-}
-
-@media (max-width: 850px) {
+@media (max-width: 775px) {
   /* PHONE ENVIRONMENT */
-
+.splash-overlay {
+  background-color:transparent;
+  }
+  #plane{
+    background-size:800px;
+  }
+   .splash-overlay h1 {
+    padding: 0;
+    margin: 0;
+  } 
   .about {
     display:inline;
   }
